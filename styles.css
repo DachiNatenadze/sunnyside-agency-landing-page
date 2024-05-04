@@ -104,7 +104,7 @@ main {
 .textegg p {
   color: #808397;
   text-align: center;
-  padding: 24px 24px;
+  padding: 26px 0px 26px 0px;
   font-family: Barlow;
   font-size: 18px;
   font-style: normal;
@@ -190,12 +190,31 @@ main {
 
 .textcup span {
   color: #24303e;
+  font-family: "Fraunces";
   font-size: 15px;
   font-style: normal;
   font-weight: 900;
-  line-height: 25px;
+  line-height: 25px; /* 166.667% */
   letter-spacing: 1px;
   text-transform: uppercase;
+}
+
+.textcup .kompententuri {
+  width: fit-content;
+  position: relative;
+}
+
+.kompententuri .line {
+  all: unset;
+  left: -5px;
+  bottom: 30px;
+  position: absolute;
+  border-radius: 15px;
+  background: #fe7766;
+  width: 118px;
+  height: 10px;
+  flex-shrink: 0;
+  opacity: 0.25;
 }
 
 .background {
@@ -299,7 +318,7 @@ main {
   justify-content: center;
 }
 
-.profile1 h2 {
+.profiles h2 {
   color: #a7aaad;
   text-align: center;
   font-family: Fraunces;
@@ -451,6 +470,7 @@ main {
   letter-spacing: -0.1px;
 }
 .img4 {
+  width: 100%;
   margin-top: 86px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -501,12 +521,12 @@ footer .infos {
   gap: 30px;
 }
 
-nav {
+.navburger {
   padding: 0px 24px;
   display: none;
   position: fixed;
   top: 106px;
-  width: -webkit-fill-available;
+  width: 100%;
   z-index: 2;
 }
 
@@ -514,7 +534,7 @@ nav {
   display: block;
 }
 
-nav ul {
+.navburger ul {
   padding: 39px 0px;
   display: flex;
   flex-direction: column;
@@ -524,7 +544,7 @@ nav ul {
   background-color: rgba(255, 252, 248, 1);
 }
 
-nav ul li a {
+.navburger ul li a {
   font-family: "Barlow", sans-serif;
   text-decoration: none;
   color: #808397;
@@ -534,7 +554,7 @@ nav ul li a {
   letter-spacing: -0.143px;
 }
 
-nav ul li:last-child {
+.navburger ul li:last-child {
   width: 140px;
   height: 56px;
   display: flex;
@@ -543,7 +563,7 @@ nav ul li:last-child {
   border-radius: 28px;
   background: #fbd600;
 }
-nav ul li:last-child a {
+.navburger ul li:last-child a {
   color: #24303e;
   font-family: "Fraunces", sans-serif;
   font-size: 15px;
@@ -551,12 +571,182 @@ nav ul li:last-child a {
   line-height: 25px;
   letter-spacing: -0.107px;
 }
-.navigationActive {
-  display: block;
+
+.Navigation {
+  padding: 20px;
 }
 
-@media (min-width: 768px) {
+.Navigation ul {
+  display: flex;
+  flex-direction: row;
+  gap: 47px;
+  list-style-type: none;
+}
+
+.Navigation ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-family: Barlow;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 25px; /* 138.889% */
+  letter-spacing: -0.129px;
+}
+
+.activeRoute {
+  width: 140px;
+  height: 56px;
+  border-radius: 28px;
+  opacity: 0.2537;
+  background: #fff;
+}
+
+@media (min-width: 1440px) {
+  .img4 {
+    grid-template-columns: 1fr 1fr 1fr 1fr !important;
+  }
+  .grandprofile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .profiles h2 {
+    text-align: center;
+    width: 100%;
+  }
+
+  .RowDiv {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .RowDiv .orangebackground,
+  .RowDiv .cherryBackgroundImage-div {
+    height: 100%;
+  }
+
+  .third {
+    flex-direction: row;
+  }
+
+  .third .background {
+    width: 100%;
+    height: 600px;
+  }
+
+  .third .textcup {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .leftaligendiv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .textcup p {
+    text-align: left;
+    max-width: 440px;
+    color: #808397;
+    font-family: Barlow;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: -0.129px;
+  }
+  .textcup span {
+    text-align: left;
+    max-width: 440px;
+    color: #24303e;
+    font-family: "Fraunces";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 25px; /* 166.667% */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  .textcup h2 {
+    width: 100%;
+    text-align: left;
+    max-width: 410px;
+    color: #24303e;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: -0.286px;
+  }
+
+  .kompententuri .line {
+    opacity: 1;
+  }
+
+  .bigeggdiv {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .bigeggdiv .sectionegg {
+    width: 100%;
+    height: 600px;
+  }
+
+  .textegg {
+    width: 100%;
+  }
+
+  .bigtext {
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .bigtext h2 {
+    text-align: left;
+    max-width: 310px;
+    color: #24303e;
+    font-family: "Fraunces";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+  }
+
+  .bigtext p {
+    color: #808397;
+    font-family: Barlow;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: left;
+    letter-spacing: -0.129px;
+  }
+
+  .Starter .burgerIcon {
+    display: none;
+  }
+
   .Starter {
-    width: 70vw;
+    width: 100%;
+    background-image: url("./images/desktop/image-header.jpg");
+  }
+
+  section{
+    width: 100vw;
   }
 }

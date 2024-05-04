@@ -7,7 +7,7 @@
       rel="shortcut icon"
       href="/images/favicon-32x32.png"
       type="image/x-icon" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
     <script src="main.js" defer></script>
     <title>sunnyside-agency-landing-page</title>
   </head>
@@ -19,6 +19,14 @@
           src="/images/icon-hamburger.svg"
           alt="hamburger"
           class="burgerIcon" />
+        <nav class="Navigation">
+          <ul>
+            <li class="lshdk"><a href="#">About</a></li>
+            <li class="lshdk"><a href="#">Services</a></li>
+            <li class="lshdk"><a href="#">Projects</a></li>
+            <li class="lshdk"><a href="#">Contact</a></li>
+          </ul>
+        </nav>
       </header>
       <section>
         <h1>We are creatives</h1>
@@ -28,7 +36,7 @@
             alt="arrow down"
             class="arrow-down" />
         </a>
-        <nav>
+        <nav class="navburger">
           <ul>
             <li><a href="#">About</a></li>
             <li><a href="#">Services</a></li>
@@ -40,101 +48,114 @@
     </div>
     <main id="main">
       <section class="starting">
-        <div class="sectionegg"></div>
-        <div class="textegg">
-          <h2>Transform your brand</h2>
-          <p>
-            We are a full-service creative agency specializing in helping brands
-            grow fast. Engage your clients through compelling visuals that do
-            most of the marketing for you.
-          </p>
-          <div class="yellow">
-            <span>LEARN MORE </span>
-            <div class="yellowline"></div>
+        <div class="bigeggdiv">
+          <div class="sectionegg"></div>
+          <div class="textegg">
+            <div class="bigtext">
+              <h2>Transform your brand</h2>
+              <p>
+                We are a full-service creative agency specializing in helping
+                brands grow fast. Engage your clients through compelling visuals
+                that do most of the marketing for you.
+              </p>
+              <div class="yellow">
+                <span>LEARN MORE </span>
+                <div class="yellowline"></div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="third">
           <div class="background"></div>
+
           <div class="textcup">
-            <h2>Stand out to the right audience</h2>
-            <p>
-              Using a collaborative formula of designers, researchers,
-              photographers, videographers, and copywriters, we’ll build and
-              extend your brand in digital places.
-            </p>
-            <div class="div">
-              <span>LEARN MORE</span>
-              <div class="line"></div>
+            <div class="leftaligendiv">
+              <h2>Stand out to the right audience</h2>
+              <p>
+                Using a collaborative formula of designers, researchers,
+                photographers, videographers, and copywriters, we’ll build and
+                extend your brand in digital places.
+              </p>
+              <div class="kompententuri">
+                <span>LEARN MORE</span>
+                <div class="line"></div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="cherryBackgroundImage-div backgroundImageDiv">
-          <p class="graphic-design">Graphic Design</p>
-          <p class="graphic-design-description">
-            Great design makes you memorable. We deliver artwork that
-            underscores your brand message and captures potential clients’
-            attention.
-          </p>
-        </div>
-
-        <div class="background orangebackground">
-          <h2 class="Photography">Photography</h2>
-          <p class="ptag">
-            Increase your credibility by getting the most stunning, high-quality
-            photos that improve your business image.
-          </p>
+        <div class="RowDiv">
+          <div class="cherryBackgroundImage-div backgroundImageDiv">
+            <p class="graphic-design">Graphic Design</p>
+            <p class="graphic-design-description">
+              Great design makes you memorable. We deliver artwork that
+              underscores your brand message and captures potential clients’
+              attention.
+            </p>
+          </div>
+          <div class="background orangebackground">
+            <h2 class="Photography">Photography</h2>
+            <p class="ptag">
+              Increase your credibility by getting the most stunning,
+              high-quality photos that improve your business image.
+            </p>
+          </div>
         </div>
       </section>
       <section class="profiles">
-        <div class="profile1">
-          <h2>CLIENT TESTIMONIALS</h2>
-          <img src="/images/image-emily.jpg" alt="pic of emily" class="emily" />
-          <p>
-            We put our trust in Sunnyside and they delivered, making sure our
-            needs were met and deadlines were always hit.
-          </p>
-          <span class="name">Emily R.</span>
-          <div class="work">Marketing Director</div>
-        </div>
+        <h2>CLIENT TESTIMONIALS</h2>
+        <div class="grandprofile">
+          <div class="profile1">
+            <img
+              src="/images/image-emily.jpg"
+              alt="pic of emily"
+              class="emily" />
+            <p>
+              We put our trust in Sunnyside and they delivered, making sure our
+              needs were met and deadlines were always hit.
+            </p>
+            <span class="name">Emily R.</span>
+            <div class="work">Marketing Director</div>
+          </div>
 
-        <div class="profile2">
-          <img src="/images/image-thomas.jpg" alt="" />
-          <p>
-            Sunnyside’s enthusiasm coupled with their keen interest in our
-            brand’s success made it a satisfying and enjoyable experience.
-          </p>
-          <span class="name">Thomas S.</span>
-          <div class="work">Chief Operating Officer</div>
-        </div>
+          <div class="profile2">
+            <img src="/images/image-thomas.jpg" alt="" />
+            <p>
+              Sunnyside’s enthusiasm coupled with their keen interest in our
+              brand’s success made it a satisfying and enjoyable experience.
+            </p>
+            <span class="name">Thomas S.</span>
+            <div class="work">Chief Operating Officer</div>
+          </div>
 
-        <div class="profile3">
-          <img src="/images/image-jennie.jpg" alt="" />
-          <p>
-            Incredible end result! Our sales increased over 400% when we worked
-            with Sunnyside. Highly recommended!
-          </p>
-          <span class="name">Jennie F.</span>
-          <div class="work">Business Owner</div>
-        </div>
-        <div class="img4">
-          <img
-            src="/images/mobile/image-gallery-milkbottles.jpg "
-            alt="milk"
-            class="milk" />
-          <img
-            src="/images/mobile/image-gallery-orange.jpg"
-            alt="orangeinice"
-            class="orangeinIce" />
-          <img
-            src="/images/mobile/image-gallery-sugar-cubes.jpg"
-            alt="sughar"
-            class="sugarcube" />
-          <img
-            src="/images/mobile/image-gallery-cone.jpg"
-            alt=""
-            class="iceCone" />
+          <div class="profile3">
+            <img src="/images/image-jennie.jpg" alt="" />
+            <p>
+              Incredible end result! Our sales increased over 400% when we
+              worked with Sunnyside. Highly recommended!
+            </p>
+            <span class="name">Jennie F.</span>
+            <div class="work">Business Owner</div>
+          </div>
         </div>
       </section>
+      <div class="img4">
+        <img
+          src="/images/mobile/image-gallery-milkbottles.jpg "
+          alt="milk"
+          class="milk" />
+        <img
+          src="/images/mobile/image-gallery-orange.jpg"
+          alt="orangeinice"
+          class="orangeinIce" />
+        <img
+          src="/images/mobile/image-gallery-sugar-cubes.jpg"
+          alt="sughar"
+          class="sugarcube" />
+        <img
+          src="/images/mobile/image-gallery-cone.jpg"
+          alt=""
+          class="iceCone" />
+      </div>
       <footer>
         <img src="/images/sunnyside.svg" alt="" />
         <ul>
