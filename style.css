@@ -21,6 +21,7 @@ body {
 }
 
 .Starter {
+  position: relative;
   width: 100vw;
   height: 100vh;
   background-image: url(/images/mobile/image-header.jpg);
@@ -498,6 +499,60 @@ footer .infos {
   justify-content: center;
   align-items: flex-start;
   gap: 30px;
+}
+
+nav {
+  padding: 0px 24px;
+  display: none;
+  position: fixed;
+  top: 106px;
+  width: -webkit-fill-available;
+  z-index: 2;
+}
+
+.navigationActive {
+  display: block;
+}
+
+nav ul {
+  padding: 39px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  list-style: none;
+  background-color: rgba(255, 252, 248, 1);
+}
+
+nav ul li a {
+  font-family: "Barlow", sans-serif;
+  text-decoration: none;
+  color: #808397;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: -0.143px;
+}
+
+nav ul li:last-child {
+  width: 140px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 28px;
+  background: #fbd600;
+}
+nav ul li:last-child a {
+  color: #24303e;
+  font-family: "Fraunces", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: -0.107px;
+}
+.navigationActive {
+  display: block;
 }
 
 @media (min-width: 768px) {
