@@ -24,7 +24,7 @@ body {
   position: relative;
   width: 100vw;
   height: 100vh;
-  background-image: url(/images/mobile/image-header.jpg);
+  background-image: url("./images/mobile/image-header.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -77,7 +77,7 @@ main {
 .sectionegg {
   width: 100vw;
   height: 400px;
-  background-image: url(/images/mobile/image-transform.jpg);
+  background-image: url("./images/mobile/image-transform.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -94,6 +94,7 @@ main {
 }
 
 .textegg h2 {
+  margin-left: 20px;
   max-width: 320px;
   color: #24303e;
   text-align: center;
@@ -149,6 +150,13 @@ main {
   align-items: center;
 }
 
+.bigtext {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .textcup h2 {
   max-width: 257px;
   margin-top: 60px;
@@ -181,6 +189,7 @@ main {
 .textcup .yellowline {
   position: absolute;
   opacity: 0.55;
+  right: 45px;
   bottom: 0;
   width: 100%;
   height: 7px;
@@ -197,6 +206,13 @@ main {
   line-height: 25px; /* 166.667% */
   letter-spacing: 1px;
   text-transform: uppercase;
+}
+
+.leftaligendiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .textcup .kompententuri {
@@ -220,7 +236,7 @@ main {
 .background {
   width: 100vw;
   height: 400px;
-  background-image: url(/images/mobile/image-stand-out.jpg);
+  background-image: url("./images/mobile/image-stand-out.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -261,7 +277,7 @@ main {
   padding-top: 27px;
 }
 .cherryBackgroundImage-div {
-  background-image: url(/images/mobile/image-graphic-design.jpg);
+  background-image: url("./images/mobile/image-graphic-design.jpg");
 }
 
 .background {
@@ -300,7 +316,7 @@ main {
 }
 
 .orangebackground {
-  background-image: url(/images/mobile/image-photography.jpg);
+  background-image: url("./images/mobile/image-photography.jpg");
 }
 
 .profiles {
@@ -602,7 +618,32 @@ footer .infos {
   background: #fff;
 }
 
-@media (min-width: 1440px) {
+.Navigation button {
+  margin-top: -10px;
+  flex-direction: row;
+  border-radius: 28px;
+  opacity: 0.2537;
+  background: #fff;
+  width: 140px;
+  height: 56px;
+  flex-shrink: 0;
+}
+
+.Navigation button span {
+  font-family: "Fraunces";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px; /* 166.667% */
+  letter-spacing: -0.107px;
+  text-transform: uppercase;
+}
+
+.RowDiv {
+  width: 100%;
+}
+
+@media (min-width: 1000px) {
   .img4 {
     grid-template-columns: 1fr 1fr 1fr 1fr !important;
   }
