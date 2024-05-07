@@ -746,7 +746,19 @@ footer .infos {
     background-image: url("./images/desktop/image-header.jpg");
   }
 
-  section{
+  section {
     width: 100vw;
+  }
+}
+
+@media (max-width: 710px) {
+  nav {
+    display: none;
+  }
+}
+
+@media (min-width: 710px) {
+  .burgerIcon {
+    display: none;
   }
 }
